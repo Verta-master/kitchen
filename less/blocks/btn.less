@@ -1,0 +1,36 @@
+.btn {
+  width: 280px;
+  height: 50px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  color: @blue;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border: 2px solid @blue;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @blue;
+    .transition();
+  }
+  
+  &--white {
+    color: #fff;
+    border-color: #fff;
+    
+    &:hover,
+    &:active {
+      color: @orange;
+      background-color: #fff;
+      .transition();
+    }
+  }
+}
