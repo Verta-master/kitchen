@@ -1,0 +1,110 @@
+.header {
+  padding: 5px 20px;
+  background-color: #fff;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  img {
+    display: block;
+    width: 170px;
+    height: auto;
+  }
+}
+
+.header__block {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  color: @blue;
+  font-size: 18px;
+  text-decoration: underline;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/email.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: @orange;
+    .transition();
+  }
+}
+
+.phones {
+  position: relative;
+  padding-left: 50px;
+  margin-right: 65px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/smartphone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  a {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: @blue;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @orange;
+      .transition();
+    }
+  }
+}
+
+.header__btn {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: @orange;
+  border: 1px solid @orange;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    background-color: #fff;
+    .transition();
+  }
+}
