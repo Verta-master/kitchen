@@ -130,19 +130,21 @@
   
   <main>
     <section class="promo">
-      <div class="swiper-container slider">
+      <div class="swiper-container promo__slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(img/images/slide-1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/images/slide-2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/images/slide-3.jpg)"></div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/slide-1.jpg)"></div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/slide-2.jpg)"></div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/slide-3.jpg)"></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev slider__prev"></div>
-        <div class="swiper-button-next slider__next"></div>
+        <div class="swiper-pagination promo__pagination"></div>
+        <div class="swiper-button-prev promo__prev"></div>
+        <div class="swiper-button-next promo__next"></div>
       </div>
-      <div class="wrapper promo__wrap">
-        <h1 class="title-main">Кухни от производителя</h1>
-        <a href="#" class="promo__btn">Перейти в каталог</a>
+      <div class="promo__wrap">
+        <div class="wrapper">
+          <h1 class="title-main">Кухни от производителя</h1>
+          <a href="#" class="promo__btn">Перейти в каталог</a>
+        </div>
       </div>
     </section>
     
@@ -325,14 +327,17 @@
 
 <!-- Sliders -->
   <script>
-    var mySwiper = new Swiper ('.slider', {
+    var mySwiper = new Swiper ('.promo__slider', {
       pagination: {
-        el: '.swiper__pagination',
+        el: '.promo__pagination',
         clickable: true,
       },
       navigation: {
-        nextEl: '.slider__next',
-        prevEl: '.slider__prev',
+        nextEl: '.promo__next',
+        prevEl: '.promo__prev',
+      },
+      autoplay: {
+        delay: 2500,
       },
       preventClicks: false,
       preventClicksPropagation: false,

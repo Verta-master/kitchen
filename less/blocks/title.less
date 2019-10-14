@@ -1,0 +1,44 @@
+.title-main {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 55px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 7px;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgb(244,132,26) 50%, rgba(255,255,255,0) 100%);
+  }
+}
+
+h2,
+.title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 100.3%;
+    width: 400px;
+    height: 20px;
+    background-image: linear-gradient(to left, rgb(244,132,26) 0%, rgb(255,255,255) 100%);
+  }
+}
