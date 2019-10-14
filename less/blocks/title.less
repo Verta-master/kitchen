@@ -42,3 +42,26 @@ h2,
     background-image: linear-gradient(to left, rgb(244,132,26) 0%, rgb(255,255,255) 100%);
   }
 }
+
+.title-center {
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 5px;
+//  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 4px;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgb(244,132,26) 50%, rgba(255,255,255,0) 100%);
+  }
+}

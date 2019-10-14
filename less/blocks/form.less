@@ -1,0 +1,91 @@
+.form {
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal {
+  padding: 40px;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 20px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--name::after {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/user.svg);
+  }
+  
+  &--phone::after {
+    width: 35px;
+    height: 35px;
+    right: -5px;
+    background-image: url(../img/icons/smartphone.svg);
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid @blue;
+  background-color: rgba(255,255,255,0);
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__btn {
+  width: 100%;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid @blue;
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+  }
+}
+
+.form__checkbox:checked + .form__label::after {
+  display: block;
+}

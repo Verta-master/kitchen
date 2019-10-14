@@ -240,11 +240,11 @@
       </div>
     </section>
     
-    <section class="partners">
+    <section class="partners" style="background-image:url(img/images/bg-3.jpg);">
       <div class="wrapper">
         <div class="partners__block">
-          <p class="partners__title"></p>
-          <p>Фабрика кухни №1 - продукт творческой лаборатории "DAIVA team" со штаб-квартирой в г. Екатеринбург, Россия.</p>
+          <p class="partners__title">Информация<br>для партнеров</p>
+          <p><b>Фабрика кухни №1</b> - продукт творческой лаборатории "DAIVA team" со штаб-квартирой в г. Екатеринбург, Россия.</p>
           <p>За 2018 год более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике. На 2019 год фабрика расширяет свое присутствие в Казахстане и Киргизии и выходит покорять рынок России.</p>
           <a href="#" class="btn partners__btn">Подробнее</a>
         </div>
@@ -311,14 +311,25 @@
           <a href="tel:87212902028">8 7212 90 20 28</a>
         </div>
         <a href="mailto:info@fm1.kz" class="mail">info@fm1.kz</a>
-        <a data-fancybox data-src="#call" href="javascript:;" class="btn footer__btn">Перезвоните мне</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--white footer__btn">Перезвоните мне</a>
       </div>
     </div>
   </footer>
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="title-center">Остались вопросы?</p>
+    <form action="#" class="form">
+      <div class="form__field form__field--name">
+        <input type="text" class="form__input" placeholder="Имя">
+      </div>
+      <div class="form__field form__field--phone">
+        <input type="tel" class="form__input" placeholder="Телефон">
+      </div>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__label">Я не робот</label>
+      <button type="submit" class="btn btn--fill form__btn">Перезвоните мне</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -352,7 +363,7 @@
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 3,
-      spaceBetween: 20,
+      loop: true,
     });
   </script>
 </body>

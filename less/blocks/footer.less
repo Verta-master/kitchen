@@ -1,0 +1,81 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+  background-color: @blue;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  .mail {
+    padding-left: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    
+    &::before {
+      background-image: url(../img/icons/email-white.svg);
+    }
+  }
+}
+
+.footer__comment {
+  margin-bottom: 0;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.footer__nav {
+  .reset();
+  list-style: none;
+  
+  li {
+    margin-top: 7px;
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.footer__phones {
+  margin-bottom: 25px;
+  
+  a {
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  &::before {
+    top: 5px;
+    left: -10px;
+    background-image: url(../img/icons/smartphone-white.svg);
+  }
+}
+
+.footer__btn {
+  margin-top: auto;
+  width: 200px;
+  border-width: 1px;
+  font-weight: 400;
+  font-size: 14px;
+}

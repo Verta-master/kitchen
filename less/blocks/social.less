@@ -1,0 +1,32 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.social__item {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.social__link {
+  display: block;
+  
+  svg {
+    display: block;
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+    .transition();
+  }
+  
+  &:hover svg,
+  &:active svg {
+    fill: @orange;
+    .transition();
+  }
+}
