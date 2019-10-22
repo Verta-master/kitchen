@@ -452,6 +452,71 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.date {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  font-size: 16px;
+  color: rgba(34, 40, 48, 0.7);
+}
+.date::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+.more {
+  display: block;
+  line-height: 1;
+  color: #046572;
+}
+.more span {
+  position: relative;
+}
+.more span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.more:hover span::after,
+.more:active span::after {
+  -webkit-animation: toRight 1s infinite;
+          animation: toRight 1s infinite;
+}
+@-webkit-keyframes toRight {
+  0% {
+    right: -30px;
+  }
+  50% {
+    right: -40px;
+  }
+  100% {
+    right: -30px;
+  }
+}
+@keyframes toRight {
+  0% {
+    right: -30px;
+  }
+  50% {
+    right: -40px;
+  }
+  100% {
+    right: -30px;
+  }
+}
 .header {
   padding: 5px 20px;
   background-color: #fff;
@@ -937,6 +1002,45 @@ h2::before,
   max-width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #f4841a), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f4841a 50%, rgba(255, 255, 255, 0) 100%);
+}
+.title-internal {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.title-internal::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 100.3%;
+  width: 400px;
+  height: 36px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f4841a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to left, #f4841a 0%, rgba(255, 255, 255, 0) 100%);
+}
+.title-left {
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.title-left::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 3px;
+  max-width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f4841a), to(rgba(255, 255, 255)));
+  background-image: linear-gradient(to right, #f4841a 0%, rgba(255, 255, 255) 100%);
 }
 .btn {
   width: 280px;
@@ -1569,6 +1673,82 @@ h2::before,
 }
 .form__checkbox:checked + .form__label::after {
   display: block;
+}
+.banner {
+  position: relative;
+  z-index: 2;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(34, 40, 48, 0.5);
+}
+.breadcrumbs {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+a.breadcrumbs__link {
+  margin-right: 5px;
+}
+a.breadcrumbs__link::after {
+  content: "-";
+  margin-left: 5px;
+}
+a.breadcrumbs__link:hover span,
+a.breadcrumbs__link:active span {
+  text-decoration: underline;
+}
+.news {
+  padding-top: 100px;
+}
+.news__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.news__item {
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 150px;
+}
+.news__item:nth-child(2n) .news__img {
+  right: 0;
+  left: auto;
+}
+.news__item:nth-child(2n) .news__info {
+  margin-left: 0;
+}
+.news__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 700px;
+}
+.news__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.news__info {
+  width: 600px;
+  min-height: 350px;
+  margin-left: auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+          box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
 }
 @media (max-width: 1220px) {
   .wrapper {
