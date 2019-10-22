@@ -1,0 +1,35 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.pages__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: @blue;
+  line-height: 1;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid @blue;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @blue;
+    .transition();
+  }
+}
+
+span.pages__link {
+  color: #fff;
+  background-color: @blue;
+}

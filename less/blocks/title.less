@@ -105,4 +105,14 @@ h2,
     max-width: 100%;
     background-image: linear-gradient(to right, rgb(244,132,26) 0%, rgba(255,255,255) 100%);
   }
+  
+  a {
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @orange;
+      .transition();
+    }
+  }
 }
