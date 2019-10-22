@@ -70,6 +70,15 @@ gulp.task('style', function (done) {
     done();
 });
 
+gulp.task("copy", function () {
+  return gulp.src([
+	  "css/*.css",
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
 // JS
 gulp.task('js:del', function(done) {
   return del('build/js', done);
@@ -94,7 +103,7 @@ gulp.task('js:scripts', function(done) {
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename('main.min.js'))
-    .pipe(gulp.dest('build/js'))
+//    .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
     done();
 });
@@ -266,6 +275,7 @@ gulp.task('build', gulp.series('clean',
 //    'favicons',
     'img-prod',
     'content',
+    'copy',
 //    'svg-sprite',
     'html'
   )

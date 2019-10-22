@@ -4,6 +4,10 @@ $('.menu__btn').click(function() {
   $('.menu__list').slideToggle();
 });
 
+$('.menu__more').click(function() {
+  $(this).parent().next().slideToggle();
+});
+
 if (window.innerWidth < 1022) {
   $('.menu__arrow').click(function() {
     $(this).next().toggleClass('menu__drop--show');
