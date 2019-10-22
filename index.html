@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -150,29 +151,29 @@
     
     <section class="creation">
       <div class="wrapper">
-        <p class="title">Создайте кухню<br>всего в несколько простых этапов</p>
+        <p class="title wow fadeInLeft">Создайте кухню<br>всего в несколько простых этапов</p>
         <ol class="creation__list">
-          <li class="creation__item">
+          <li class="creation__item wow fadeInLeft" data-wow-delay="0.5s">
             <p class="creation__title">Замеры</p>
             <p class="creation__text">Сотрудники компании, приедут в удобное для вас время, чтобы сделать правильные замеры кухни, а также дадут рекомендации по расположению, в случае необходимости.</p>
             <figure class="creation__icon"></figure>
           </li>
-          <li class="creation__item">
+          <li class="creation__item wow fadeInLeft" data-wow-delay="1s">
             <p class="creation__title">Проектирование</p>
             <p class="creation__text">Выберите форму, цвет, материал и фурнитуру для Вашей будущей кухни из живых образцов. А наши дизайнеры спроектируют 3D модель готового проекта.</p>
             <figure class="creation__icon"></figure>
           </li>
-          <li class="creation__item">
+          <li class="creation__item wow fadeInLeft" data-wow-delay="1.3s">
             <p class="creation__title">Утверждение проекта</p>
             <p class="creation__text">Финальное согласование 3D модели гарнитура - его модулей, размер, цвет и фурнитуры. Расчет точной стоимости и заключение договора.</p>
             <figure class="creation__icon"></figure>
           </li>
-          <li class="creation__item">
+          <li class="creation__item wow fadeInLeft" data-wow-delay="1.6s">
             <p class="creation__title">Изготовление</p>
             <p class="creation__text">Производство кухни Вашей мечты, займет 21 рабочий день. Фабрика работает по российским технологиям, используя новейшее оборудование и высококачественные материалы.</p>
             <figure class="creation__icon"></figure>
           </li>
-          <li class="creation__item">
+          <li class="creation__item wow fadeInLeft" data-wow-delay="2s">
             <p class="creation__title">Сборка</p>
             <p class="creation__text">Наши специалисты, приедут в удобное для вас время, чтобы собрать гарнитур. Фабрика кухни №1 предоставляет гарантию 1 год.</p>
             <figure class="creation__icon"></figure>
@@ -181,7 +182,7 @@
       </div>
     </section>
     
-    <section class="subscribe">
+    <section class="subscribe wow zoomIn" data-wow-offset="150" data-wow-duration="1s">
       <div class="subscribe__block">
         <p class="subscribe__title">Получите бесплатную консультацию</p>
         <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--white subscribe__btn">Перезвоните мне</a>
@@ -191,12 +192,12 @@
     <section class="about">
       <div class="wrapper">
         <div class="about__wrap">
-          <div class="about__info">
+          <div class="about__info wow fadeInLeft" data-wow-offset="200" data-wow-duration="1s">
             <p class="title">O компании</p>
             <p><b>Фабрика кухни №1</b> – единственный дилер в Казахстане, предоставляющий качественную кухонную мебель Российского производителя. Все технологии и оборудование, были перевезены в г. Караганда, где происходит полный цикл изготовления и сборки мебели. За последний год, более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике.</p>
             <a href="#" class="btn about__btn">Подробнее</a>
           </div>
-          <div class="about__gallery">
+          <div class="about__gallery wow rotateIn" data-wow-offset="200" data-wow-duration="1s">
             <a data-fancybox="gallery" href="img/images/bg-3.jpg" class="about__img">
               <img src="img/images/img-1.jpg" alt="O компании">
             </a>
@@ -211,7 +212,7 @@
       </div>
     </section>
     
-    <section class="projects">
+    <section class="projects wow zoomIn" data-wow-offset="150" data-wow-duration="1s">
       <div class="wrapper">
         <p class="title-center">Наши проекты</p>
         <div class="projects__wrap">
@@ -242,7 +243,7 @@
     
     <section class="partners" style="background-image:url(img/images/bg-3.jpg);">
       <div class="wrapper">
-        <div class="partners__block">
+        <div class="partners__block wow fadeInRight" data-wow-offset="200">
           <p class="partners__title">Информация<br>для партнеров</p>
           <p><b>Фабрика кухни №1</b> - продукт творческой лаборатории "DAIVA team" со штаб-квартирой в г. Екатеринбург, Россия.</p>
           <p>За 2018 год более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике. На 2019 год фабрика расширяет свое присутствие в Казахстане и Киргизии и выходит покорять рынок России.</p>
@@ -336,8 +337,9 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
 
-<!-- Sliders -->
+  <!-- Sliders -->
   <script>
     var mySwiper = new Swiper ('.promo__slider', {
       pagination: {
@@ -374,6 +376,11 @@
         },
       }
     });
+  </script>
+  
+  <!-- Animation -->
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>
