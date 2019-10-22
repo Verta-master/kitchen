@@ -37,9 +37,14 @@
   }
 }
 
-.promo__slider {
+.promo__slide {
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
   &::before {
     content: "";
@@ -51,14 +56,6 @@
     right: 0;
     background-color: rgba(4, 101, 114, 0.2);
   }
-}
-
-.promo__slide {
-  box-sizing: border-box;
-  min-height: 700px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .promo__pagination {
