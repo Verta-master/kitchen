@@ -801,9 +801,7 @@ button {
   background-position: center;
 }
 .menu__column {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 25%;
 }
 .menu__more {
   display: block;
@@ -861,6 +859,9 @@ button {
 }
 .menu__sublist li {
   margin-bottom: 10px;
+}
+.menu__sublist--closed {
+  display: none;
 }
 .menu__subitem a:hover,
 .menu__subitem a:active {
