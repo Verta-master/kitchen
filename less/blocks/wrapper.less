@@ -5,3 +5,65 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.date {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  font-size: 16px;
+  color: rgba(34,40,48,0.7);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/calendar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
+}
+
+.more {
+  display: block;
+  line-height: 1;
+  color: #046572;
+  
+  span {
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -30px;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/icons/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    span::after {
+      animation: toRight 1s infinite;
+    }
+  }
+}
+
+@keyframes toRight {
+  0% {
+    right: -30px;
+  }
+  50% {
+    right: -40px;
+  }
+  100% {
+    right: -30px;
+  }
+}
