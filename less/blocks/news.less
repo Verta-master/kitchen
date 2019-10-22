@@ -1,5 +1,17 @@
 .news {
   padding-top: 100px;
+  overflow: hidden;
+  
+  &--about {
+    .news__item {
+      padding-top: 35px;
+    }
+    .news__info {
+      min-height: 400px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
 }
 
 .news__list {
@@ -44,6 +56,11 @@
   padding: 40px 50px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+  
+  b {
+    font-weight: 500;
+    color: @blue;
+  }
 }
 
 .news__more {
