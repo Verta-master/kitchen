@@ -31,6 +31,9 @@
   .projects__slider {
     width: 850px;
   }
+  .info__img {
+    top: 20px;
+  }
 }
 
 //---------------------------------------------------
@@ -236,6 +239,36 @@
   .contacts__field:last-child {
     margin-bottom: 60px;
   }
+  .info__block {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  .info__img {
+    position: static;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info {
+    padding-top: 20px;
+  }
+  .steps__wrap {
+    display: block;
+  }
+  .steps__img {
+    position: static;
+    width: 50%;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .steps__info {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
 
 //---------------------------------------------------
@@ -300,6 +333,9 @@
   .projects {
     margin-bottom: 200px;
   }
+  .info,
+  .steps,
+  .subscribe,
   .partners {
     margin-bottom: 60px;
   }
@@ -321,6 +357,8 @@
 
 //---------------------------------------------------
 @media (max-width: 480px) {
+  .steps__img,
+  .info__img,
   .contacts__field,
   .footer__block,
   .menu__column {
@@ -425,5 +463,12 @@
   }
   .order__form {
     padding: 20px 30px;
+  }
+  .steps__item {
+    padding-left: 0;
+    padding-top: 100px;
+  }
+  .order {
+    margin-bottom: 60px;
   }
 }
