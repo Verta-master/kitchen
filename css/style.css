@@ -1666,6 +1666,12 @@ h2::before,
   height: 30px;
   background-image: url(../img/icons/email.svg);
 }
+.form__field--password::after {
+  width: 35px;
+  height: 35px;
+  right: -3px;
+  background-image: url(../img/icons/padlock.svg);
+}
 .form__field--comment {
   margin-top: 30px;
 }
@@ -2193,6 +2199,11 @@ span.pages__link {
   right: 0;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.order--login .order__form {
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .order__form {
   width: 590px;
   max-width: 100%;
@@ -2223,6 +2234,11 @@ span.pages__link {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
           box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+}
+.info__block--wide {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .info__block b {
   color: #046572;
