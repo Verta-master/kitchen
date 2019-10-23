@@ -2370,6 +2370,109 @@ span.pages__link {
   font-weight: 500;
   color: #046572;
 }
+.files {
+  margin-bottom: 100px;
+}
+.files__img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.files__img img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.files__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.files__docs {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  margin-top: -100px;
+  padding: 40px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+          box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+}
+.files__link {
+  display: block;
+  width: 25%;
+  margin-bottom: 20px;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100px 100px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.files__link span {
+  display: block;
+  font-size: 18px;
+  opacity: 0.7;
+}
+.files__link--xls,
+.files__link--xlsx {
+  background-image: url(../img/icons/xls.svg);
+}
+.files__link--pdf {
+  background-image: url(../img/icons/pdf.svg);
+}
+.files__link--doc,
+.files__link--docx {
+  background-image: url(../img/icons/doc.svg);
+}
+.files__link--zip {
+  background-image: url(../img/icons/zip.svg);
+}
+.files__link:hover,
+.files__link:active {
+  color: #f4841a;
+  opacity: 0.8;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.files__link:hover span,
+.files__link:active span {
+  color: #222830;
+}
 @media (max-width: 1400px) {
   .product__overlay,
   .product__img {
@@ -2659,6 +2762,9 @@ span.pages__link {
     margin-left: 0;
     padding-left: 0;
   }
+  .files__link {
+    width: 50%;
+  }
 }
 @media (max-width: 766px) {
   .phones a {
@@ -2743,6 +2849,7 @@ span.pages__link {
   }
 }
 @media (max-width: 480px) {
+  .files__link,
   .steps__img,
   .info__img,
   .contacts__field,
