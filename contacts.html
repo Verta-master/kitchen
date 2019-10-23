@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Фабрика кухни</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrap">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <div class="header__block">
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Поиск по сайту">
+          <button type="submit" class="search__btn"></button>
+        </form>
+        <div class="phones header__phones">
+          <a href="tel:87756686950">8 775 668 69 50</a>
+          <a href="tel:87212902028">8 7212 90 20 28</a>
+        </div>
+        <div class="header__contacts">
+          <a href="mailto:info@fm1.kz" class="mail">info@fm1.kz</a>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="header__btn">Перезвоните мне</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item menu__item--more">
+          <a href="#" class="menu__link">Каталог</a>
+          <button type="button" class="menu__arrow"></button>
+          <div class="menu__drop">
+            <div class="menu__column">
+              <div class="menu__title">
+                <a href="#" class="menu__sublink">Модули</a>
+                <button type="button" class="menu__more"></button>
+              </div>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Нижние модули</a></li>
+                <li class="menu__subitem"><a href="#">Верхние модули</a></li>
+                <li class="menu__subitem"><a href="#">Пеналы</a></li>
+              </ul>
+            </div>
+            <div class="menu__column">
+              <div class="menu__title">
+                <a href="#" class="menu__sublink">Фасады</a>
+                <button type="button" class="menu__more"></button>
+              </div>
+              <ul class="menu__sublist">
+                <li class="menu__subitem">
+                  <div class="menu__title">
+                    <a href="#">Фрезеровки</a>
+                    <button type="button" class="menu__more"></button>
+                  </div>
+                  <ul class="menu__sublist menu__sublist--closed">
+                    <li class="menu__subitem"><a href="#">Категория Light</a></li>
+                    <li class="menu__subitem"><a href="#">Категория Standard</a></li>
+                    <li class="menu__subitem"><a href="#">Категория Vision</a></li>
+                    <li class="menu__subitem"><a href="#">Категория Standard-Vision</a></li>
+                    <li class="menu__subitem"><a href="#">Категория Classic</a></li>
+                  </ul>
+                </li>
+                <li class="menu__subitem"><a href="#">Наполнение фасадов</a></li>
+                <li class="menu__subitem"><a href="#">Наполнение фрезеровок</a></li>
+              </ul>
+            </div>
+            <div class="menu__column">
+              <div class="menu__title">
+                <a href="#" class="menu__sublink">Декор</a>
+                <button type="button" class="menu__more"></button>
+              </div>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Пилястры</a></li>
+                <li class="menu__subitem"><a href="#">Арки</a></li>
+                <li class="menu__subitem"><a href="#">Световая планка</a></li>
+                <li class="menu__subitem"><a href="#">Балюстрада</a></li>
+                <li class="menu__subitem"><a href="#">Карнизы</a></li>
+                <li class="menu__subitem"><a href="#">Корона</a></li>
+              </ul>
+            </div>
+            <div class="menu__column">
+              <div class="menu__title">
+                <a href="#" class="menu__sublink">Дополнительнo</a>
+                <button type="button" class="menu__more"></button>
+              </div>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Острова</a></li>
+                <li class="menu__subitem"><a href="#">Барные стойки</a></li>
+              </ul>
+              <div class="menu__title menu__title--top">
+                <a href="#" class="menu__sublink">Фурнитура</a>
+              </div>
+              <div class="menu__title menu__title--top">
+                <a href="#" class="menu__sublink">Цветовые решения</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">проекты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О фабрике</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Партнеры</a>
+        </li>
+        <li class="menu__item menu__item--active">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Новости</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="banner" style="background-image:url(img/images/banner.jpg);">
+      <div class="wrapper">
+        <p class="title-internal">Контакты</p>
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link"><span>Главная</span></a>
+          <span class="breadcrumbs__link">Контакты</span>
+        </nav>
+      </div>
+    </section>
+    
+    <section class="contacts">
+      <div class="contacts__map">
+        <iframe src="https://yandex.com/map-widget/v1/-/CGDovLzp"></iframe>
+      </div>
+      <div class="wrapper">
+        <div class="contacts__info">
+          <div class="contacts__field contacts__field--address">
+            <p class="contacts__title">Адрес</p>
+            <address>г. Екатеринбург,<br>ул. Мира, 150, офис 15</address>
+          </div>
+          <div class="contacts__field contacts__field--time">
+            <p class="contacts__title">Часы работы</p>
+            <p>Пн.-Пт.: 10:00 - 18:00<br>Сб.: 10:00 - 13:00<br>Вс.: выходной</p>
+          </div>
+          <div class="contacts__field contacts__field--phone">
+            <p class="contacts__title">Телефоны</p>
+            <a href="tel:87756686950">8 775 668 69 50</a>
+            <a href="tel:87212902028">8 7212 90 20 28</a>
+          </div>
+          <div class="contacts__field contacts__field--email">
+            <p class="contacts__title">Электронная почта</p>
+            <a href="mailto:info@fm1.kz">info@fm1.kz</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="order" style="background-image:url(img/images/bg-4.jpg);">
+      <div class="wrapper">
+        <div class="order__form">
+          <p class="title-center">Остались вопросы?</p>
+          <form action="#" class="form">
+            <div class="form__field form__field--name">
+              <input type="text" class="form__input" placeholder="Имя">
+            </div>
+            <div class="form__field form__field--phone">
+              <input type="tel" class="form__input" placeholder="Телефон">
+            </div>
+            <div class="form__field form__field--email">
+              <input type="email" class="form__input" placeholder="E-mail">
+            </div>
+            <div class="form__field form__field--comment">
+              <label for="comment" class="form__text">Ваш комментарий</label>
+              <textarea id="comment" class="form__comment"></textarea>
+            </div>
+            <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+            <label for="checkbox" class="form__label">Я не робот</label>
+            <button type="submit" class="btn btn--fill form__btn">Перезвоните мне</button>
+            <div class="privacy_field">
+              Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="product">
+      <div class="wrapper product__wrap">
+        <p class="title">Готовые проекты</p>
+        <div class="swiper-button-prev product__prev"></div>
+        <div class="swiper-button-next product__next"></div>
+      </div>
+      <div class="swiper-container product__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product__slide">
+            <a href="#" class="product__link">
+              <figure class="product__img">
+                <img src="img/images/img-1.jpg" alt="Готовые проекты">
+              </figure>
+              <div class="product__title">
+                <p class="product__name">Кухня<b>Urban</b></p>
+              </div>
+              <div class="product__overlay">
+                <table>
+                  <tr>
+                    <td>Цвет корпуса:</td>
+                    <td>ЛДСП Дуб Экспрессив Песочный</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов нижних модулей + антресоли:</td>
+                    <td>ПВХ Дуб Светлый</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов верхних модулей:</td>
+                    <td>ПВХ Супермат Графит</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов на острове:</td>
+                    <td>ПВХ Супермат Джелато</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет столешницы:</td>
+                    <td>Гранильятто</td>
+                  </tr>
+                  <tr>
+                    <td>Фрезеровка:</td>
+                    <td>Кардамон L</td>
+                  </tr>
+                </table>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide product__slide">
+            <a href="#" class="product__link">
+              <figure class="product__img">
+                <img src="img/images/img-6.jpg" alt="Готовые проекты">
+              </figure>
+              <div class="product__title">
+                <p class="product__name">Кухня<b>Scandi</b></p>
+              </div>
+              <div class="product__overlay">
+                <table>
+                  <tr>
+                    <td>Цвет корпуса:</td>
+                    <td>ЛДСП Дуб Экспрессив Песочный</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов:</td>
+                    <td>ПВХ Супермат Джелато</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет столешницы:</td>
+                    <td>Микадо Светлый</td>
+                  </tr>
+                  <tr>
+                    <td>Фрезеровка:</td>
+                    <td>Кардамон L</td>
+                  </tr>
+                </table>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide product__slide">
+            <a href="#" class="product__link">
+              <figure class="product__img">
+                <img src="img/images/img-7.jpg" alt="Готовые проекты">
+              </figure>
+              <div class="product__title">
+                <p class="product__name">Кухня<b>Neo</b></p>
+              </div>
+              <div class="product__overlay">
+                <table>
+                  <tr>
+                    <td>Цвет корпуса:</td>
+                    <td>ЛДСП Серый шифер</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов:</td>
+                    <td>ПВХ Супермат Графит</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет столешницы:</td>
+                    <td>Металлик глянец</td>
+                  </tr>
+                  <tr>
+                    <td>Фрезеровка:</td>
+                    <td>Кардамон L</td>
+                  </tr>
+                </table>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide product__slide">
+            <a href="#" class="product__link">
+              <figure class="product__img">
+                <img src="img/images/img-2.jpg" alt="Готовые проекты">
+              </figure>
+              <div class="product__title">
+                <p class="product__name">Кухня<b>Classic</b></p>
+              </div>
+              <div class="product__overlay">
+                <table>
+                  <tr>
+                    <td>Цвет корпуса:</td>
+                    <td>ЛДСП Белый снег</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет фасадов:</td>
+                    <td>ПВХ Древесный супермат Шторм</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет столешницы:</td>
+                    <td>Микадо Светлый</td>
+                  </tr>
+                  <tr>
+                    <td>Фрезеровка:</td>
+                    <td>Чили S</td>
+                  </tr>
+                </table>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="more product__more"><span>Все проекты</span></a>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__wrap">
+      <div class="footer__block footer__block--logo">
+        <div class="logo">
+          <img src="img/images/logo-white.png" alt="Logo">
+        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg x="0px" y="0px" width="60.734px" height="60.733px" viewBox="0 0 60.734 60.733" style="enable-background:new 0 0 60.734 60.733;" xml:space="preserve">
+	              <path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914 v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462 v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-180 390c-74.441406 0-135-60.558594-135-135s60.558594-135 135-135 135 60.558594 135 135-60.558594 135-135 135zm150-240c-24.8125 0-45-20.1875-45-45s20.1875-45 45-45 45 20.1875 45 45-20.1875 45-45 45zm0 0"></path>
+                <path d="m407 90c-8.277344 0-15 6.722656-15 15s6.722656 15 15 15 15-6.722656 15-15-6.722656-15-15-15zm0 0"></path>
+                <path d="m257 150c-57.890625 0-105 47.109375-105 105s47.109375 105 105 105 105-47.109375 105-105-47.109375-105-105-105zm0 0"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg x="0px" y="0px" width="94px" height="94px" viewBox="0 0 94 94" style="enable-background:new 0 0 94 94;" xml:space="preserve">
+	              <path d="M89,0H5C2.238,0,0,2.239,0,5v84c0,2.761,2.238,5,5,5h84c2.762,0,5-2.239,5-5V5C94,2.239,91.762,0,89,0z M74.869,52.943 c2.562,2.5,5.271,4.854,7.572,7.617c1.018,1.22,1.978,2.48,2.709,3.899c1.041,2.024,0.101,4.247-1.713,4.366l-11.256-0.003 c-2.906,0.239-5.22-0.931-7.172-2.918c-1.555-1.585-3.001-3.277-4.5-4.914c-0.611-0.673-1.259-1.306-2.025-1.806 c-1.534-0.996-2.867-0.692-3.748,0.909c-0.896,1.63-1.103,3.438-1.185,5.255c-0.125,2.655-0.925,3.348-3.588,3.471 c-5.69,0.268-11.091-0.596-16.108-3.463c-4.429-2.53-7.854-6.104-10.838-10.146c-5.816-7.883-10.27-16.536-14.27-25.437 c-0.901-2.005-0.242-3.078,1.967-3.119c3.676-0.073,7.351-0.063,11.022-0.004c1.496,0.023,2.485,0.879,3.058,2.289c1.985,4.885,4.421,9.533,7.471,13.843c0.813,1.147,1.643,2.292,2.823,3.103c1.304,0.896,2.298,0.601,2.913-0.854 c0.393-0.928,0.563-1.914,0.647-2.906c0.292-3.396,0.327-6.792-0.177-10.175c-0.315-2.116-1.507-3.483-3.617-3.883 c-1.074-0.204-0.917-0.602-0.395-1.215c0.906-1.062,1.76-1.718,3.456-1.718l12.721-0.002c2.006,0.392,2.452,1.292,2.725,3.311 l0.012,14.133c-0.021,0.782,0.391,3.098,1.795,3.61c1.123,0.371,1.868-0.53,2.54-1.244c3.048-3.235,5.22-7.056,7.167-11.009 c0.857-1.743,1.6-3.549,2.32-5.356c0.533-1.337,1.367-1.995,2.875-1.971l12.246,0.013c0.36,0,0.729,0.004,1.086,0.063 c2.062,0.355,2.627,1.243,1.99,3.257c-1.004,3.163-2.959,5.799-4.871,8.441c-2.043,2.825-4.224,5.557-6.252,8.396 C72.411,49.38,72.561,50.688,74.869,52.943z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg x="0px" y="0px" width="94px" height="94px" viewBox="0 0 94 94" style="enable-background:new 0 0 94 94;" xml:space="preserve">
+		            <path d="M47.051,37.59c5.247-0.017,9.426-4.23,9.407-9.489c-0.021-5.259-4.207-9.448-9.456-9.452 c-5.293-0.005-9.52,4.259-9.479,9.566C37.562,33.454,41.788,37.612,47.051,37.59z"></path>
+		            <path d="M89,0H5C2.239,0,0,2.238,0,5v84c0,2.762,2.239,5,5,5h84c2.762,0,5-2.238,5-5V5C94,2.238,91.762,0,89,0z M47.08,8.766 c10.699,0.027,19.289,8.781,19.236,19.602c-0.057,10.57-8.787,19.138-19.469,19.102c-10.576-0.036-19.248-8.803-19.188-19.396 C27.722,17.365,36.4,8.734,47.08,8.766z M68.753,55.072c-2.366,2.431-5.214,4.187-8.378,5.416 c-2.991,1.156-6.268,1.742-9.512,2.13c0.49,0.534,0.721,0.793,1.025,1.102c4.404,4.425,8.826,8.832,13.215,13.27 c1.494,1.511,1.81,3.386,0.985,5.145c-0.901,1.925-2.916,3.188-4.894,3.052c-1.252-0.088-2.228-0.711-3.094-1.582 c-3.324-3.345-6.711-6.627-9.965-10.031c-0.947-0.992-1.403-0.807-2.241,0.056c-3.343,3.442-6.738,6.831-10.155,10.2 c-1.535,1.514-3.36,1.785-5.143,0.922c-1.892-0.917-3.094-2.848-3.001-4.791c0.064-1.312,0.71-2.314,1.611-3.214 c4.356-4.351,8.702-8.713,13.05-13.072c0.289-0.288,0.557-0.597,0.976-1.045c-5.929-0.619-11.275-2.077-15.85-5.657 c-0.567-0.445-1.154-0.875-1.674-1.373c-2.002-1.924-2.203-4.125-0.618-6.396c1.354-1.942,3.632-2.464,5.997-1.349 c0.459,0.215,0.895,0.486,1.313,0.775c8.528,5.86,20.245,6.023,28.806,0.266c0.847-0.647,1.754-1.183,2.806-1.449 c2.045-0.525,3.947,0.224,5.045,2.012C70.314,51.496,70.297,53.488,68.753,55.072z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__comment">2017-2019 гг. Фабрика кухни №1. Все права защищены.</p>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">Навигация</p>
+        <ul class="footer__nav">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог продукции</a></li>
+          <li><a href="#">Готовые проекты</a></li>
+          <li><a href="#">О фабрике</a></li>
+          <li><a href="#">Партнеры</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Новости</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <div class="phones footer__phones">
+          <a href="tel:87756686950">8 775 668 69 50</a>
+          <a href="tel:87212902028">8 7212 90 20 28</a>
+        </div>
+        <a href="mailto:info@fm1.kz" class="mail">info@fm1.kz</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--white footer__btn">Перезвоните мне</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-center">Остались вопросы?</p>
+    <form action="#" class="form">
+      <div class="form__field form__field--name">
+        <input type="text" class="form__input" placeholder="Имя">
+      </div>
+      <div class="form__field form__field--phone">
+        <input type="tel" class="form__input" placeholder="Телефон">
+      </div>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+      <label for="checkbox" class="form__label">Я не робот</label>
+      <button type="submit" class="btn btn--fill form__btn">Перезвоните мне</button>
+      <div class="privacy_field">
+        Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.
+      </div>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.product__slider', {
+      navigation: {
+        nextEl: '.product__next',
+        prevEl: '.product__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      breakpoints: {
+        1220: {
+          slidesPerView: 3,
+        },
+        1022: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      }
+    });
+  </script>
+  
+  <!-- Animation -->
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
