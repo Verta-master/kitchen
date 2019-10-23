@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Фабрика кухни</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -116,10 +115,10 @@
         <li class="menu__item">
           <a href="#" class="menu__link">О фабрике</a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--active">
           <a href="#" class="menu__link">Партнеры</a>
         </li>
-        <li class="menu__item menu__item--active">
+        <li class="menu__item">
           <a href="#" class="menu__link">Контакты</a>
         </li>
         <li class="menu__item">
@@ -132,15 +131,125 @@
   <main>
     <section class="banner" style="background-image:url(img/images/banner.jpg);">
       <div class="wrapper">
-        <p class="title-internal">Контакты</p>
+        <p class="title-internal">Партнеры</p>
         <nav class="breadcrumbs">
           <a href="#" class="breadcrumbs__link"><span>Главная</span></a>
-          <span class="breadcrumbs__link">Контакты</span>
+          <span class="breadcrumbs__link">Партнеры</span>
         </nav>
       </div>
     </section>
     
+    <section class="info">
+      <div class="wrapper">
+        <figure class="info__img wow fadeInUp">
+          <img src="img/images/scheme.png" alt="Партнеры">
+        </figure>
+        <div class="info__block wow fadeInLeft">
+          <p><b>Фабрика кухни №1</b> - продукт творческой лаборатории "DAIVA team" со штаб-квартирой в г. Екатеринбург, Россия. Помимо "Фабрики кухни N1" творческая лаборатория "DAIVA team" запустила и успешно управляет следующими проектами:</p>
+          <ul>
+            <li>
+              <p><a href="#">Decor Trade</a> - крупнейший на территории России и Казахстана поставщик декоративных пленок ПВХ для облицовывания МДФ</p>
+            </li>
+            <li>
+              <p><a href="#">Robust</a> - эксклюзивный дистрибьютор высококачественных клеевых систем</p>
+            </li>
+            <li>
+              <p><a href="#">MAXKEEN</a> - один из ключевых игроков на рынке мебельного и деревообрабатывающего оборудования в России и Казахстане</p>
+            </li>
+            <li>
+              <p><a href="#">ZonaZatravka</a> - лидер по производству столов и стульев из массива березы</p>
+            </li>
+            <li>
+              <p><a href="#">Simargl</a> - фабрика высококачественных межкомнатных дверей</p>
+            </li>
+            <li>
+              <p><a href="#">ReZone</a> - фабрика эксклюзивной мебели для гостиных и спален</p>
+            </li>
+            <li>
+              <p><a href="#">ReZone Simple</a> - мебель для гостиных и спален эконом сегмента</p>
+            </li>
+            <li>
+              <p><a href="#">WaterWorld</a> - экономичная и функциональная мебель для ванных комнат эконом сегмента</p>
+            </li>
+            <li>
+              <p><a href="#">Barbara Q</a> - мебель для ванных комнат сегмента средний +</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="steps">
+      <div class="wrapper">
+        <div class="steps__wrap">
+          <figure class="steps__img wow fadeInRight" data-wow-offset="150">
+            <img src="img/images/img-8.jpg" alt="Карта сотрудничества">
+          </figure>
+          <div class="steps__info wow fadeInLeft" data-wow-offset="150">
+            <p class="title">Карта сотрудничества</p>
+            <ol class="steps__list">
+              <li class="steps__item">
+                <p class="steps__title">Краткое название шага</p>
+                <p>Описание действий в этом шаге. Нумерация автоматическая. Описание действий в этом шаге. Нумерация автоматическая.</p>
+              </li>
+              <li class="steps__item">
+                <p class="steps__title">Краткое название шага</p>
+                <p>Описание действий в этом шаге. Нумерация автоматическая. Описание действий в этом шаге. Нумерация автоматическая.</p>
+              </li>
+              <li class="steps__item">
+                <p class="steps__title">Краткое название шага</p>
+                <p>Описание действий в этом шаге. Нумерация автоматическая. Описание действий в этом шаге. Нумерация автоматическая.</p>
+              </li>
+              <li class="steps__item">
+                <p class="steps__title">Краткое название шага</p>
+                <p>Описание действий в этом шаге. Нумерация автоматическая. Описание действий в этом шаге. Нумерация автоматическая.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="subscribe wow zoomIn" data-wow-offset="150" data-wow-duration="1s">
+      <div class="subscribe__block">
+        <p class="subscribe__title">Получите бесплатную консультацию</p>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--white subscribe__btn">Перезвоните мне</a>
+      </div>
+    </section>
+    
+    <section class="order" data-parallax="scroll" data-image-src="img/images/slide-1.jpg">
+      <div class="wrapper">
+        <div class="order__form">
+          <p class="title-center">Хочешь стать нашим партнером? Оставь заявку!</p>
+          <form action="#" class="form">
+            <div class="form__field form__field--name">
+              <input type="text" class="form__input" placeholder="Имя">
+            </div>
+            <div class="form__field form__field--phone">
+              <input type="tel" class="form__input" placeholder="Телефон">
+            </div>
+            <div class="form__field form__field--email">
+              <input type="email" class="form__input" placeholder="E-mail">
+            </div>
+            <div class="form__field form__field--comment">
+              <label for="comment" class="form__text">Ваш комментарий</label>
+              <textarea id="comment" class="form__comment"></textarea>
+            </div>
+            <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+            <label for="checkbox" class="form__label">Я не робот</label>
+            <button type="submit" class="btn btn--fill form__btn">Перезвоните мне</button>
+            <div class="privacy_field">
+              Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
     <section class="contacts">
+      <div class="wrapper">
+        <p class="title">Контакты</p>
+      </div>
       <div class="contacts__wrap">
         <div class="contacts__map">
           <iframe src="https://yandex.com/map-widget/v1/-/CGDovLzp"></iframe>
@@ -167,176 +276,6 @@
           </div>
         </div>
       </div>
-    </section>
-    
-    <section class="order" data-parallax="scroll" data-image-src="img/images/bg-4.jpg">
-      <div class="wrapper">
-        <div class="order__form">
-          <p class="title-center">Остались вопросы?</p>
-          <form action="#" class="form">
-            <div class="form__field form__field--name">
-              <input type="text" class="form__input" placeholder="Имя">
-            </div>
-            <div class="form__field form__field--phone">
-              <input type="tel" class="form__input" placeholder="Телефон">
-            </div>
-            <div class="form__field form__field--email">
-              <input type="email" class="form__input" placeholder="E-mail">
-            </div>
-            <div class="form__field form__field--comment">
-              <label for="comment" class="form__text">Ваш комментарий</label>
-              <textarea id="comment" class="form__comment"></textarea>
-            </div>
-            <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
-            <label for="checkbox" class="form__label">Я не робот</label>
-            <button type="submit" class="btn btn--fill form__btn">Перезвоните мне</button>
-            <div class="privacy_field">
-              Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    
-    <section class="product">
-      <div class="wrapper product__wrap">
-        <p class="title">Готовые проекты</p>
-        <div class="swiper-button-prev product__prev"></div>
-        <div class="swiper-button-next product__next"></div>
-      </div>
-      <div class="swiper-container product__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide product__slide">
-            <a href="#" class="product__link">
-              <figure class="product__img">
-                <img src="img/images/img-1.jpg" alt="Готовые проекты">
-              </figure>
-              <div class="product__title">
-                <p class="product__name">Кухня<b>Urban</b></p>
-              </div>
-              <div class="product__overlay">
-                <table>
-                  <tr>
-                    <td>Цвет корпуса:</td>
-                    <td>ЛДСП Дуб Экспрессив Песочный</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов нижних модулей + антресоли:</td>
-                    <td>ПВХ Дуб Светлый</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов верхних модулей:</td>
-                    <td>ПВХ Супермат Графит</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов на острове:</td>
-                    <td>ПВХ Супермат Джелато</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет столешницы:</td>
-                    <td>Гранильятто</td>
-                  </tr>
-                  <tr>
-                    <td>Фрезеровка:</td>
-                    <td>Кардамон L</td>
-                  </tr>
-                </table>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide product__slide">
-            <a href="#" class="product__link">
-              <figure class="product__img">
-                <img src="img/images/img-6.jpg" alt="Готовые проекты">
-              </figure>
-              <div class="product__title">
-                <p class="product__name">Кухня<b>Scandi</b></p>
-              </div>
-              <div class="product__overlay">
-                <table>
-                  <tr>
-                    <td>Цвет корпуса:</td>
-                    <td>ЛДСП Дуб Экспрессив Песочный</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов:</td>
-                    <td>ПВХ Супермат Джелато</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет столешницы:</td>
-                    <td>Микадо Светлый</td>
-                  </tr>
-                  <tr>
-                    <td>Фрезеровка:</td>
-                    <td>Кардамон L</td>
-                  </tr>
-                </table>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide product__slide">
-            <a href="#" class="product__link">
-              <figure class="product__img">
-                <img src="img/images/img-7.jpg" alt="Готовые проекты">
-              </figure>
-              <div class="product__title">
-                <p class="product__name">Кухня<b>Neo</b></p>
-              </div>
-              <div class="product__overlay">
-                <table>
-                  <tr>
-                    <td>Цвет корпуса:</td>
-                    <td>ЛДСП Серый шифер</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов:</td>
-                    <td>ПВХ Супермат Графит</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет столешницы:</td>
-                    <td>Металлик глянец</td>
-                  </tr>
-                  <tr>
-                    <td>Фрезеровка:</td>
-                    <td>Кардамон L</td>
-                  </tr>
-                </table>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide product__slide">
-            <a href="#" class="product__link">
-              <figure class="product__img">
-                <img src="img/images/img-2.jpg" alt="Готовые проекты">
-              </figure>
-              <div class="product__title">
-                <p class="product__name">Кухня<b>Classic</b></p>
-              </div>
-              <div class="product__overlay">
-                <table>
-                  <tr>
-                    <td>Цвет корпуса:</td>
-                    <td>ЛДСП Белый снег</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет фасадов:</td>
-                    <td>ПВХ Древесный супермат Шторм</td>
-                  </tr>
-                  <tr>
-                    <td>Цвет столешницы:</td>
-                    <td>Микадо Светлый</td>
-                  </tr>
-                  <tr>
-                    <td>Фрезеровка:</td>
-                    <td>Чили S</td>
-                  </tr>
-                </table>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="more product__more"><span>Все проекты</span></a>
     </section>
   </main>
   
@@ -426,33 +365,12 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/parallax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
 
-  <!-- Sliders -->
+  <!-- Animation -->
   <script>
-    var mySwiper = new Swiper ('.product__slider', {
-      navigation: {
-        nextEl: '.product__next',
-        prevEl: '.product__prev',
-      },
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 4,
-      spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        1220: {
-          slidesPerView: 3,
-        },
-        1022: {
-          slidesPerView: 2,
-        },
-        480: {
-          slidesPerView: 1,
-        },
-      }
-    });
+    new WOW().init();
   </script>
 </body>
 </html>
