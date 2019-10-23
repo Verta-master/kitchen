@@ -9,6 +9,7 @@
 
 .form__field {
   position: relative;
+  width: 100%;
   margin-bottom: 20px;
   
   &::after {
@@ -29,21 +30,57 @@
   &--phone::after {
     width: 35px;
     height: 35px;
-    right: -5px;
+    right: -3px;
     background-image: url(../img/icons/smartphone.svg);
+  }
+    
+  &--email::after {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/email.svg);
+  }
+    
+  &--comment {
+    margin-top: 30px;
+      
+    &::after {
+      width: 30px;
+      height: 30px;
+      bottom: auto;
+      top: -5px;
+      background-image: url(../img/icons/comment.svg);
+    }
   }
 }
 
+.form__text {
+  display: block;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+
+.form__comment,
 .form__input {
   display: block;
   width: 100%;
-  height: 50px;
-  border-bottom: 2px solid @blue;
   background-color: rgba(255,255,255,0);
   
   &::placeholder {
     opacity: 1;
   }
+}
+
+.form__input {
+  height: 50px;
+  padding-right: 40px;
+  border-bottom: 2px solid @blue;
+}
+
+.form__comment {
+  height: 100px;
+  padding: 10px;
+  border: 2px solid @blue;
 }
 
 .form__btn {
