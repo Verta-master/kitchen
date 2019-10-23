@@ -1715,6 +1715,7 @@ h2::before,
 }
 .form__comment {
   height: 100px;
+  min-height: 100px;
   padding: 10px;
   border: 2px solid #046572;
 }
@@ -2410,6 +2411,47 @@ span.pages__link {
     padding: 20px 50px;
     padding-right: 100px;
   }
+  .order__form {
+    width: 500px;
+    padding: 40px 50px;
+    margin-right: auto;
+  }
+  .contacts {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contacts__map {
+    position: static;
+    width: 100%;
+    min-width: 400px;
+    margin-bottom: 40px;
+  }
+  .contacts__map iframe {
+    height: 400px;
+  }
+  .contacts__info {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__field {
+    width: 50%;
+    font-size: 18px;
+  }
+  .contacts__title {
+    font-size: 24px;
+  }
+  .contacts__field:last-child {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 766px) {
   .phones a {
@@ -2491,6 +2533,7 @@ span.pages__link {
   }
 }
 @media (max-width: 480px) {
+  .contacts__field,
   .footer__block,
   .menu__column {
     width: 100%;
@@ -2583,5 +2626,15 @@ span.pages__link {
     padding: 20px;
     padding-bottom: 80px;
     font-size: 20px;
+  }
+  .contacts__info {
+    display: block;
+  }
+  .order__form {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 20px 30px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
