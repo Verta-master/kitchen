@@ -1,0 +1,107 @@
+.steps {
+  margin-bottom: 100px;
+  
+  .title::before {
+    display: none;
+  }
+}
+
+.steps__wrap {
+  position: relative;
+}
+
+.steps__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}
+
+.steps__info {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 35px;
+}
+
+.steps__list {
+  .reset();
+  list-style: none;
+  counter-reset: myCounter;
+}
+
+.steps__item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  line-height: 1.2;
+  
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+//    font-family: "Roboto Slab", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    text-shadow: 
+      rgb(244, 132, 26) 3px 0px 0px,
+      rgb(244, 132, 26) 2.83487px 0.981584px 0px,
+      rgb(244, 132, 26) 2.35766px 1.85511px 0px,
+      rgb(244, 132, 26) 1.62091px 2.52441px 0px,
+      rgb(244, 132, 26) 0.705713px 2.91581px 0px,
+      rgb(244, 132, 26) -0.287171px 2.98622px 0px,
+      rgb(244, 132, 26) -1.24844px 2.72789px 0px,
+      rgb(244, 132, 26) -2.07227px 2.16926px 0px,
+      rgb(244, 132, 26) -2.66798px 1.37182px 0px,
+      rgb(244, 132, 26) -2.96998px 0.42336px 0px,
+      rgb(244, 132, 26) -2.94502px -0.571704px 0px,
+      rgb(244, 132, 26) -2.59586px -1.50383px 0px,
+      rgb(244, 132, 26) -1.96093px -2.27041px 0px,
+      rgb(244, 132, 26) -1.11013px -2.78704px 0px,
+      rgb(244, 132, 26) -0.137119px -2.99686px 0px,
+      rgb(244, 132, 26) 0.850987px -2.87677px 0px,
+      rgb(244, 132, 26) 1.74541px -2.43999px 0px,
+      rgb(244, 132, 26) 2.44769px -1.73459px 0px,
+      rgb(244, 132, 26) 2.88051px -0.838246px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+  }
+}
+
+.steps__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  color: @blue;
+}
