@@ -1,0 +1,94 @@
+.files {
+  margin-bottom: 100px;
+}
+
+.files__img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    flex: 0 0 auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.2);
+  }
+}
+
+.files__docs {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  margin-top: -100px;
+  padding: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+}
+
+.files__link {
+  display: block;
+  width: 25%;
+  margin-bottom: 20px;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100px 100px;
+  .transition();
+  
+  span {
+    display: block;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+  
+  &--xls,
+  &--xlsx {
+    background-image: url(../img/icons/xls.svg);
+  }
+  &--pdf {
+    background-image: url(../img/icons/pdf.svg);
+  }
+  &--doc,
+  &--docx {
+    background-image: url(../img/icons/doc.svg);
+  }
+  &--zip {
+    background-image: url(../img/icons/zip.svg);
+  }
+  
+  &:hover,
+  &:active {
+    color: @orange;
+    opacity: 0.8;
+    .transition();
+    
+    span {
+      color: @black;
+    }
+  }
+}
