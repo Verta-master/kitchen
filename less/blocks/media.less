@@ -40,6 +40,44 @@
   .catalog {
     background-image: none;
   }
+  .wrapper--columns {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .wrapper__content {
+    width: 100%;
+    padding-top: 0;
+  }
+  .module__list {
+    justify-content: space-around;
+  }
+  .filter {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .filter__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .filter__field {
+    width: 50%;
+  }
+  .filter__wrap {
+    display: none;
+  }
+  .filter .title {
+    cursor: pointer;
+    
+    &::after {
+      content: "\226B";
+      position: absolute;
+      top: 0;
+      left: 130px;
+      color: @orange;
+      font-weight: 500;
+    }
+  }
 }
 
 //---------------------------------------------------
@@ -369,6 +407,8 @@
 
 //---------------------------------------------------
 @media (max-width: 480px) {
+  .filter__btn,
+  .filter__field,
   .files__link,
   .steps__img,
   .info__img,
@@ -501,5 +541,20 @@
   }
   .catalog__sublist {
     padding-left: 25px;
+  }
+  .module__info,
+  .module__price,
+  .module__link .title-left,
+  .module__img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .module__link .title-left::after {
+    left: 20px;
+  }
+  .module__buy {
+    padding-left: 0;
+    font-size: 0;
+    background-position: center;
   }
 }
