@@ -2201,14 +2201,12 @@ span.pages__link {
 }
 .order--login .order__form {
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .order__form {
   width: 590px;
   max-width: 100%;
   margin-left: auto;
-  padding: 40px 100px;
+  padding: 60px 100px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 .order__form .title-center {
@@ -2472,6 +2470,175 @@ span.pages__link {
 .files__link:hover span,
 .files__link:active span {
   color: #222830;
+}
+.catalog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../img/images/bg-7.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.catalog__item {
+  position: relative;
+  z-index: 10;
+}
+.catalog__item:nth-child(2) {
+  z-index: 9;
+}
+.catalog__item:nth-child(3) {
+  z-index: 8;
+}
+.catalog__item:nth-child(4) {
+  z-index: 7;
+}
+.catalog__item:nth-child(5) {
+  z-index: 6;
+}
+.catalog__item:nth-child(6) {
+  z-index: 5;
+}
+.catalog__item:nth-child(7) {
+  z-index: 4;
+}
+.catalog__item:nth-child(8) {
+  z-index: 3;
+}
+.catalog__item:nth-child(9) {
+  z-index: 2;
+}
+.catalog__item:nth-child(10) {
+  z-index: 1;
+}
+.catalog__line {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+          box-shadow: 0px 5px 10px 0px rgba(141, 133, 127, 0.3);
+}
+.catalog__btn {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+}
+.catalog__btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f4841a;
+}
+.catalog__btn--opened {
+  background-image: url(../img/icons/minus.svg);
+}
+.catalog__link {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #046572;
+  line-height: 1.2;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__link:hover,
+.catalog__link:active {
+  color: #f4841a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 365px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.catalog__sublist {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.catalog__sublink {
+  display: block;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  color: #046572;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__sublink:hover,
+.catalog__sublink:active {
+  color: #f4841a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 @media (max-width: 1400px) {
   .product__overlay,
