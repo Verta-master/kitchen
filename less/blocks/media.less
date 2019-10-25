@@ -11,6 +11,18 @@
   .product__overlay table td {
     height: auto;
   }
+  .view {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .view__link {
+    height: 400px;
+  }
+  .view__title {
+    min-width: 300px;
+    padding: 20px;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -319,6 +331,17 @@
   .catalog__img {
     opacity: 0.3;
   }
+  .view__link {
+    height: 300px;
+  }
+  .view__title {
+    min-width: 200px;
+    padding: 15px;
+    font-size: 24px;
+  }
+  .view__item {
+    width: 49%;
+  }
 }
 
 //---------------------------------------------------
@@ -407,6 +430,7 @@
 
 //---------------------------------------------------
 @media (max-width: 480px) {
+  .view__item,
   .filter__btn,
   .filter__field,
   .files__link,
@@ -557,4 +581,5 @@
     font-size: 0;
     background-position: center;
   }
+  
 }
