@@ -70,10 +70,10 @@
   .filter__form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
-  .filter__field {
-    width: 50%;
+  .filter__block {
+    width: 45%;
   }
   .filter__wrap {
     display: none;
@@ -450,9 +450,11 @@
 
 //---------------------------------------------------
 @media (max-width: 480px) {
+  .work__item,
   .view__item,
   .filter__btn,
-  .filter__field,
+  .filter__clear,
+  .filter__block,
   .files__link,
   .steps__img,
   .info__img,
@@ -610,5 +612,12 @@
   }
   .gallery-thumbs .swiper-slide {
     max-height: 100px;
+  }
+  .work__link {
+    height: 200px;
+  }
+  .work__title {
+    width: 100%;
+    font-size: 20px;
   }
 }
