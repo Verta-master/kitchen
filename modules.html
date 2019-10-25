@@ -146,8 +146,8 @@
         <p class="title filter__title">Фильтр</p>
         <div class="filter__wrap">
           <form action="#" class="filter__form">
+            <p class="filter__subtitle">Конфигурация модуля</p>
             <fieldset class="filter__field">
-              <p class="filter__subtitle">Конфигурация модуля</p>
               <input type="checkbox" id="checkbox1" class="form__checkbox">
               <label for="checkbox1" class="form__label">Верхний</label>
               <input type="checkbox" id="checkbox2" class="form__checkbox" checked="">
@@ -155,8 +155,8 @@
               <input type="checkbox" id="checkbox3" class="form__checkbox">
               <label for="checkbox3" class="form__label">Пенал</label>
             </fieldset>
+            <p class="filter__subtitle">Тип модуля</p>
             <fieldset class="filter__field">
-              <p class="filter__subtitle">Тип модуля</p>
               <input type="checkbox" id="checkbox4" class="form__checkbox" checked="">
               <label for="checkbox4" class="form__label">Закрывающий</label>
               <input type="checkbox" id="checkbox5" class="form__checkbox">
@@ -164,8 +164,8 @@
               <input type="checkbox" id="checkbox6" class="form__checkbox">
               <label for="checkbox6" class="form__label">Прямой</label>
             </fieldset>
+            <p class="filter__subtitle">Размер, мм</p>
             <fieldset class="filter__field">
-              <p class="filter__subtitle">Размер, мм</p>
               <input type="checkbox" id="checkbox7" class="form__checkbox">
               <label for="checkbox7" class="form__label">600</label>
               <input type="checkbox" id="checkbox8" class="form__checkbox">
@@ -175,15 +175,15 @@
               <input type="checkbox" id="checkbox10" class="form__checkbox">
               <label for="checkbox10" class="form__label">900</label>
             </fieldset>
+            <p class="filter__subtitle">Количество дверей</p>
             <fieldset class="filter__field">
-              <p class="filter__subtitle">Количество дверей</p>
               <input type="checkbox" id="checkbox11" class="form__checkbox">
               <label for="checkbox11" class="form__label">1</label>
               <input type="checkbox" id="checkbox12" class="form__checkbox" checked="">
               <label for="checkbox12" class="form__label">2</label>
             </fieldset>
+            <p class="filter__subtitle">Количество ящиков</p>
             <fieldset class="filter__field">
-              <p class="filter__subtitle">Количество ящиков</p>
               <input type="checkbox" id="checkbox13" class="form__checkbox" checked="">
               <label for="checkbox13" class="form__label">Любое</label>
               <input type="checkbox" id="checkbox14" class="form__checkbox">
@@ -192,6 +192,7 @@
               <label for="checkbox15" class="form__label">2</label>
             </fieldset>
             <button type="submit" class="btn btn--fill filter__btn">Показать</button>
+            <input type="button" class="btn filter__clear" value="Сбросить">
           </form>
         </div>
       </aside>
@@ -310,6 +311,12 @@
             <a href="#" class="pages__link">3</a>
             <a href="#" class="pages__link">&raquo;</a>
           </nav>
+          
+          <div class="shop_text text">
+            <p><b>Фабрика кухни №1</b> – единственный дилер в Казахстане, предоставляющий качественную <a href="#">кухонную мебель</a> Российского производителя. Все технологии и оборудование, были перевезены в г. Караганда, где происходит полный цикл изготовления и сборки мебели. За последний год, более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике.</p>
+            <p><b>Фабрика кухни №1</b> – единственный дилер в Казахстане, предоставляющий качественную <a href="#">кухонную мебель</a> Российского производителя. Все технологии и оборудование, были перевезены в г. Караганда, где происходит полный цикл изготовления и сборки мебели. За последний год, более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике.</p>
+            <p><b>Фабрика кухни №1</b> – единственный дилер в Казахстане, предоставляющий качественную <a href="#">кухонную мебель</a> Российского производителя. Все технологии и оборудование, были перевезены в г. Караганда, где происходит полный цикл изготовления и сборки мебели. За последний год, более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике.</p>
+          </div>
         </section>
       </div>
     </div>
@@ -467,6 +474,10 @@
   
   <!-- Filter show/hide -->
   <script>
+    $('.filter__subtitle').click(function() {
+      $(this).next().slideToggle();
+    });
+    
     if (window.innerWidth < 1220) {
       $('.filter__title').click(function() {
         $(this).next().slideToggle();

@@ -567,6 +567,22 @@ button {
 .privacy_field a:active {
   text-decoration: none;
 }
+.shop_text b,
+.text b {
+  font-weight: 500;
+  color: #046572;
+}
+.shop_text a,
+.text a {
+  color: #046572;
+  text-decoration: underline;
+}
+.shop_text a:hover,
+.text a:hover,
+.shop_text a:active,
+.text a:active {
+  text-decoration: none;
+}
 .header {
   padding: 5px 20px;
   background-color: #fff;
@@ -1882,6 +1898,7 @@ a.breadcrumbs__link:active span {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .pages__link {
   width: 40px;
@@ -2670,11 +2687,37 @@ span.pages__link {
   padding: 0;
   border: 0;
   margin-bottom: 25px;
+  display: none;
 }
 .filter__subtitle {
+  position: relative;
   margin-top: 0;
   color: #046572;
   font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.filter__subtitle::after {
+  content: "\203A";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 24px;
+  line-height: 1;
+}
+.filter__subtitle:hover,
+.filter__subtitle:active {
+  color: #f4841a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.filter__clear {
+  margin-top: 20px;
+  background-color: #fff;
+  cursor: pointer;
 }
 .module {
   margin-bottom: 100px;
