@@ -2915,6 +2915,119 @@ span.pages__link {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.view {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.view__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.view__item {
+  width: 49.5%;
+  margin-bottom: 20px;
+}
+.view__item:nth-child(2n) .view__title {
+  left: 0;
+  right: auto;
+}
+.view__link {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.view__link img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  min-width: 100%;
+  -o-object-position: 50%;
+     object-position: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view__link::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+}
+.view__link:hover::before,
+.view__link:active::before {
+  -webkit-animation: shine 0.75s;
+          animation: shine 0.75s;
+}
+.view__link:hover .view__title,
+.view__link:active .view__title {
+  color: #f4841a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+@-webkit-keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.view__title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  min-width: 400px;
+  padding: 25px 60px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #046572;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 @media (max-width: 1400px) {
   .product__overlay,
   .product__img {
@@ -2927,6 +3040,18 @@ span.pages__link {
   }
   .product__overlay table td {
     height: auto;
+  }
+  .view {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .view__link {
+    height: 400px;
+  }
+  .view__title {
+    min-width: 300px;
+    padding: 20px;
+    font-size: 30px;
   }
 }
 @media (max-width: 1220px) {
@@ -3262,6 +3387,17 @@ span.pages__link {
   .catalog__img {
     opacity: 0.3;
   }
+  .view__link {
+    height: 300px;
+  }
+  .view__title {
+    min-width: 200px;
+    padding: 15px;
+    font-size: 24px;
+  }
+  .view__item {
+    width: 49%;
+  }
 }
 @media (max-width: 766px) {
   .phones a {
@@ -3346,6 +3482,7 @@ span.pages__link {
   }
 }
 @media (max-width: 480px) {
+  .view__item,
   .filter__btn,
   .filter__field,
   .files__link,
