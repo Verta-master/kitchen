@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -147,58 +147,27 @@
         <div class="filter__wrap">
           <form action="#" class="filter__form">
             <div class="filter__block">
-              <p class="filter__subtitle">Конфигурация модуля</p>
+              <p class="filter__subtitle">Стоимость проекта</p>
               <fieldset class="filter__field">
-                <input type="checkbox" id="checkbox1" class="form__checkbox">
-                <label for="checkbox1" class="form__label">Верхний</label>
-                <input type="checkbox" id="checkbox2" class="form__checkbox" checked="">
-                <label for="checkbox2" class="form__label">Нижний</label>
-                <input type="checkbox" id="checkbox3" class="form__checkbox">
-                <label for="checkbox3" class="form__label">Пенал</label>
+                <div class="filter__range">
+                  <div id="slider-range"></div>
+                </div>
+                <div class="filter__values">
+                  <input type="text" id="amount-min" class="filter__input">
+                  <input type="text" id="amount-max" class="filter__input">
+                </div>
               </fieldset>
             </div>
             <div class="filter__block">
-              <p class="filter__subtitle">Тип модуля</p>
+              <p class="filter__subtitle">Площадь кухни</p>
               <fieldset class="filter__field">
-                <input type="checkbox" id="checkbox4" class="form__checkbox" checked="">
-                <label for="checkbox4" class="form__label">Закрывающий</label>
-                <input type="checkbox" id="checkbox5" class="form__checkbox">
-                <label for="checkbox5" class="form__label">Угловой</label>
-                <input type="checkbox" id="checkbox6" class="form__checkbox">
-                <label for="checkbox6" class="form__label">Прямой</label>
-              </fieldset>
-            </div>
-            <div class="filter__block">
-              <p class="filter__subtitle">Размер, мм</p>
-              <fieldset class="filter__field">
-                <input type="checkbox" id="checkbox7" class="form__checkbox">
-                <label for="checkbox7" class="form__label">600</label>
-                <input type="checkbox" id="checkbox8" class="form__checkbox">
-                <label for="checkbox8" class="form__label">700</label>
-                <input type="checkbox" id="checkbox9" class="form__checkbox" checked="">
-                <label for="checkbox9" class="form__label">800</label>
-                <input type="checkbox" id="checkbox10" class="form__checkbox">
-                <label for="checkbox10" class="form__label">900</label>
-              </fieldset>
-            </div>
-            <div class="filter__block">
-              <p class="filter__subtitle">Количество дверей</p>
-              <fieldset class="filter__field">
-                <input type="checkbox" id="checkbox11" class="form__checkbox">
-                <label for="checkbox11" class="form__label">1</label>
-                <input type="checkbox" id="checkbox12" class="form__checkbox" checked="">
-                <label for="checkbox12" class="form__label">2</label>
-              </fieldset>
-            </div>
-            <div class="filter__block">
-              <p class="filter__subtitle">Количество ящиков</p>
-              <fieldset class="filter__field">
-                <input type="checkbox" id="checkbox13" class="form__checkbox" checked="">
-                <label for="checkbox13" class="form__label">Любое</label>
-                <input type="checkbox" id="checkbox14" class="form__checkbox">
-                <label for="checkbox14" class="form__label">1</label>
-                <input type="checkbox" id="checkbox15" class="form__checkbox">
-                <label for="checkbox15" class="form__label">2</label>
+                <div class="filter__range">
+                  <div id="slider-range2"></div>
+                </div>
+                <div class="filter__values">
+                  <input type="text" id="amount-min2" class="filter__input">
+                  <input type="text" id="amount-max2" class="filter__input">
+                </div>
               </fieldset>
             </div>
             <div class="filter__block">
@@ -210,119 +179,45 @@
       </aside>
       
       <div class="wrapper__content">
-        <section class="module">
-          <ul class="module__list">
-            <li class="module__item">
-              <a href="#" class="module__link">
-                <figure class="module__img">
-                  <img src="img/images/model-1.png" alt="Нижний прямой модуль">
-                </figure>
-                <p class="title-left">Нижний прямой модуль</p>
-                <span class="module__label">-20%</span>
-                <span class="btn btn--white module__btn">Подробнее</span>
+        <section class="work">
+          <ul class="work__list">
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/img-2.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
               </a>
-              <div class="module__info">
-                <p>2 двери<br>Накладные петли с доводчиком<br>Высота: 820<br>Ширина: 600/700/450/800/900<br>Глубина: 460</p>
-              </div>
-              <form action="#" class="module__form">
-                <div class="module__price">
-                  <p class="module__old">5000 руб.</p>
-                  <p class="module__new">4000 руб.</p>
-                </div>
-                <div class="module__bottom">
-                  <div class="module__number">
-                    <button type="button" class="module__change module__change--minus">-</button>
-                    <input type="text" class="module__value" value="1">
-                    <button type="button" class="module__change module__change--plus">+</button>
-                  </div>
-                  <a href="#" class="module__buy">Заказать</a>
-                </div>
-              </form>
             </li>
-            <li class="module__item">
-              <a href="#" class="module__link">
-                <figure class="module__img">
-                  <img src="img/images/model-2.png" alt="Нижний прямой модуль">
-                </figure>
-                <p class="title-left">Нижний прямой модуль</p>
-                <span class="btn btn--white module__btn">Подробнее</span>
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/1.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
               </a>
-              <div class="module__info">
-                <p>1 ящик, 2 двери<br>Накладные петли с доводчиком<br>Высота: 820<br>Ширина: 600/700/800<br>Глубина: 460</p>
-              </div>
-              <form action="#" class="module__form">
-                <div class="module__price">
-                  <p class="module__new">4000 руб.</p>
-                </div>
-                <div class="module__bottom">
-                  <div class="module__number">
-                    <button type="button" class="module__change module__change--minus">-</button>
-                    <input type="text" class="module__value" value="1">
-                    <button type="button" class="module__change module__change--plus">+</button>
-                  </div>
-                  <a href="#" class="module__buy">Заказать</a>
-                </div>
-              </form>
             </li>
-            <li class="module__item">
-              <a href="#" class="module__link">
-                <figure class="module__img">
-                  <img src="img/images/model-2.png" alt="Нижний прямой модуль">
-                </figure>
-                <p class="title-left">Нижний прямой модуль</p>
-                <span class="btn btn--white module__btn">Подробнее</span>
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/img-1.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
               </a>
-              <div class="module__info">
-                <p>1 ящик, 2 двери<br>Накладные петли с доводчиком<br>Высота: 820<br>Ширина: 600/700/800<br>Глубина: 460</p>
-              </div>
-              <form action="#" class="module__form">
-                <div class="module__price">
-                  <p class="module__new">4000 руб.</p>
-                </div>
-                <div class="module__bottom">
-                  <div class="module__number">
-                    <button type="button" class="module__change module__change--minus">-</button>
-                    <input type="text" class="module__value" value="1">
-                    <button type="button" class="module__change module__change--plus">+</button>
-                  </div>
-                  <a href="#" class="module__buy">Заказать</a>
-                </div>
-              </form>
             </li>
-            <li class="module__item">
-              <a href="#" class="module__link">
-                <figure class="module__img">
-                  <img src="img/images/model-2.png" alt="Нижний прямой модуль">
-                </figure>
-                <p class="title-left">Нижний прямой модуль</p>
-                <span class="btn btn--white module__btn">Подробнее</span>
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/img-7.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
               </a>
-              <div class="module__info">
-                <p>1 ящик, 2 двери<br>Накладные петли с доводчиком<br>Высота: 820<br>Ширина: 600/700/800<br>Глубина: 460</p>
-              </div>
-              <form action="#" class="module__form">
-                <div class="module__price">
-                  <p class="module__new">4000 руб.</p>
-                </div>
-                <div class="module__bottom">
-                  <div class="module__number">
-                    <button type="button" class="module__change module__change--minus">-</button>
-                    <input type="text" class="module__value" value="1">
-                    <button type="button" class="module__change module__change--plus">+</button>
-                  </div>
-                  <a href="#" class="module__buy">Заказать</a>
-                </div>
-              </form>
+            </li>
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/img-4.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
+              </a>
+            </li>
+            <li class="work__item">
+              <a href="#" class="work__link">
+                <img src="img/images/img-5.jpg" alt="Название проекта">
+                <p class="work__title">Название проекта</p>
+              </a>
             </li>
           </ul>
-          
-          <nav class="pages">
-            <a href="#" class="pages__link">&laquo;</a>
-            <a href="#" class="pages__link">1</a>
-            <span class="pages__link">2</span>
-            <a href="#" class="pages__link">3</a>
-            <a href="#" class="pages__link">&raquo;</a>
-          </nav>
           
           <div class="shop_text text">
             <p><b>Фабрика кухни №1</b> – единственный дилер в Казахстане, предоставляющий качественную <a href="#">кухонную мебель</a> Российского производителя. Все технологии и оборудование, были перевезены в г. Караганда, где происходит полный цикл изготовления и сборки мебели. За последний год, более 10 000 семей по всему Казахстану и Киргизии стали счастливыми обладателями мебели, произведенной на фабрике.</p>
@@ -461,6 +356,9 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/range.js"></script>
 
   <!-- Sliders -->
   <script>
