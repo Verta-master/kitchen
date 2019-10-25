@@ -2768,6 +2768,7 @@ span.pages__link {
 }
 .module__label {
   position: absolute;
+  z-index: 10;
   top: 30px;
   left: -60px;
   -webkit-transform: rotate(-45deg);
@@ -2898,6 +2899,7 @@ span.pages__link {
           align-items: center;
   padding-left: 45px;
   width: 50%;
+  max-width: 280px;
   height: 50px;
   color: #fff;
   text-transform: uppercase;
@@ -3028,6 +3030,138 @@ span.pages__link {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.card {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card__pic {
+  width: 640px;
+  position: relative;
+  overflow: hidden;
+}
+.card__info {
+  width: calc(100% - 700px);
+}
+.card__info table {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 2px solid #a49e99;
+}
+.card__info table tr {
+  border-top: 2px solid #a49e99;
+}
+.card__info table td {
+  height: 50px;
+  padding-right: 10px;
+}
+.card__info .module__price {
+  padding: 0;
+}
+.gallery-top {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card__slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  padding: 40px;
+  border: 1px solid #a49e99;
+  overflow: hidden;
+}
+.card__slide img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.gallery-thumbs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #a49e99;
+}
+.gallery-thumbs .swiper-slide img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  border-color: #f4841a;
+}
+.card__prev {
+  left: 0;
+}
+.card__next {
+  right: 0;
+}
+.card__prev,
+.card__next {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  border-width: 1px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.card__prev:hover,
+.card__next:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.card__title {
+  margin-bottom: 15px;
+  color: #046572;
+  font-weight: 500;
+}
+.card__block {
+  margin-bottom: 40px;
+}
+.card__icons img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100px;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
 @media (max-width: 1400px) {
   .product__overlay,
   .product__img {
@@ -3126,6 +3260,16 @@ span.pages__link {
     left: 130px;
     color: #f4841a;
     font-weight: 500;
+  }
+  .card__pic {
+    width: 50%;
+  }
+  .card__info {
+    width: 48%;
+  }
+  .card {
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 1022px) {
@@ -3398,6 +3542,16 @@ span.pages__link {
   .view__item {
     width: 49%;
   }
+  .card__pic {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .card__wrap {
+    display: block;
+  }
 }
 @media (max-width: 766px) {
   .phones a {
@@ -3634,5 +3788,12 @@ span.pages__link {
     padding-left: 0;
     font-size: 0;
     background-position: center;
+  }
+  .card__info .module__buy {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    background-position: left 30px center;
   }
 }
